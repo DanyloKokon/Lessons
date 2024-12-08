@@ -12,6 +12,21 @@
 // for (let nr = 0; nr <= 10; nr +=1) {
 //     console.log(nr);
 // }
+let i = 0;
+while (i <= 5) {
+    console.log(i);
+    i +=1;
+}
+
+
+do {
+    
+} while (i <=5);
+
+
+
+
+
 
 
 /*
@@ -90,3 +105,8 @@ console.log(askNum);
 
 // let input;
 // let total;
+
+
+
+
+
