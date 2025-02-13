@@ -262,4 +262,44 @@ const tweets = [
   { id: '003', likes: 8, tags: ['css', 'react'] },
   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
 ];
-const allTweets = tweets.reduce(function (tags, tweet) { }, [])
+
+
+const allTweets = tweets.reduce(function (tags, tweet) {
+   tags.push(...tweet.tags)
+   return tags
+}, []) //['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
+
+/*
+//Зробити перевірку чи існує властивість з ключем teg.
+//Якщо є збільшуємо її значення на 1
+//Якщо нема то створити властивість з ключем tag і значенням 1 
+* Ведемо статистику тегів
+*/
+const tagsStats = allTweets.reduce(function (obj, tag) {
+  if (obj[tag]) {
+    obj[tag] += 1
+  } else {
+    obj[tag] = 1
+  }
+  return obj
+}, {});
+
+console.log(tagsStats); // {
+// js: 1,
+// nodejs: 2,
+// html: 3
+// }
+
+
+
+
+/*
+ * Рахуємо загальну кількість годин
+ */
+
+const allTimePlayed = players.reduce(function (allTime, player) {
+  return allTime += player.timePlayed
+
+}, 0)
+
+console.log(allTimePlayed);
