@@ -303,3 +303,41 @@ const allTimePlayed = players.reduce(function (allTime, player) {
 }, 0)
 
 console.log(allTimePlayed);
+
+
+
+
+// ---------------------Sort---------------------
+const fnA = function (a, b) {}
+function fnB(a, b) {}
+const fnC = () =>{}
+
+/*
+ * Array.prototype.sort(callback(currentEl, nextEl){})
+ * - Сортує та ЗМІНЮЄ оригінальний масив
+ * - За замовчуванням:
+ *    - Сортує за зростанням 
+ *    - приводить елементи в рядок і сортує по [Unicode](https://unicode-table.com/en/)
+ */
+
+
+
+const numbers = [1, 9, 6, 2, 3];
+numbers.sort((сurrentEl, nextEl) => {
+  return nextEl - сurrentEl
+});
+console.log(numbers); // [1, 2, 3, 6, 9]
+
+const letters = ['b', 'B', 'a', 'A'];
+letters.sort((currentEl, nextEl) => {
+
+});
+
+
+
+
+const items = ["réservé", "premier", "communiqué", "café", "adieu", "éclair"];
+items.sort((a, b) => a.localeCompare(b));
+console.log(items);
+const data = ["delta", "alpha", "charlie", "bravo"];
+data.sort((a, b) => a.localeCompare(b));
