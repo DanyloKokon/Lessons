@@ -174,6 +174,17 @@ class Car {
   if (this.speed)
  }
 
+
+
+ get model() {
+  console.log(this._model);
+}
+
+set model(newModel) {
+  this._model = newModel
+}
+
+
  /*
   * Додає в поле distance кілометраж (hours * speed),
   * але тільки в тому випадку, якщо машина заведена!
