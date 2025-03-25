@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" class="js-target-btn">Цільова кнопка</button>
+    <!-- <button type="button" class="js-target-btn">Цільова кнопка</button>
     <button type="button" class="js-add-listener">Додати слухача</button>
     <button type="button" class="js-remove-listener">Зняти слухача</button>
 <hr>
@@ -30,8 +30,58 @@
       <label>
         Ім'я
         <input type="range" class="js-sound" value="helo" />
-      </label>
+      </label> -->
+
+
+
+
+      <form class="js-register-form" autocomplete="off">
+        <div role="group">
+          <label>
+            Пошта
+            label>
+          <br>
+          <label>
+            Пароль
+            <input  name="password" type="password" />
+          </label><input type="email" name="email" />
+          </
+        </div>
+  
+        <br />
+        <div role="group">
+          <b>Тип піписки:</b>
+          <label>
+            <input type="radio" name="subscription" value="free" />
+            Free
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="basic" />
+            Basic
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="pro" />
+            Pro
+          </label>
+        </div>
+  
+        <br />
+        <button type="submit">Зареєструватися</button>
+      </form>
+  
 
     <script type="module", src="/JS/events.js" ></script>
+
+    <form class='form'>
+      <label>
+        Name
+        <input  name="password" type="password" />
+        <label>
+      <br>
+      <label>
+        Cell
+        <input  name="password" type="password" />
+      </label><input type="email" name="email" />
+    </form>
 </body>
 </html>

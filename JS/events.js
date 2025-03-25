@@ -78,29 +78,40 @@
 
 
 // ----------------------------------------------------------------------
-const inputEl = document.querySelector('.js-input');
-const chekboxEl = document.querySelector('.js-license');
-const buttonEl = document.querySelector('.js-button');
-const spanEl = document.querySelector('.js-button span');
-const soundEl = document.querySelector('.js-sound');
-//inputEl.addEventListener('input', (event) => {
-//console.log(event.currentTarget.value);
-//spanEl.textContent = event.currentTarget.value;
-//})
-chekboxEl.addEventListener('change', (event) => {
-    // if (event.currentTarget.checked) {
-    //     buttonEl.removeAttribute('disabled');
-    // } else {
-    //     buttonEl.setAttribute('disabled', true);
-    // }
-    buttonEl.disabled = !event.currentTarget.checked;
-})
+// const inputEl = document.querySelector('.js-input');
+// const chekboxEl = document.querySelector('.js-license');
+// const buttonEl = document.querySelector('.js-button');
+// const spanEl = document.querySelector('.js-button span');
+// const soundEl = document.querySelector('.js-sound');
+// //inputEl.addEventListener('input', (event) => {
+// //console.log(event.currentTarget.value);
+// //spanEl.textContent = event.currentTarget.value;
+// //})
+// chekboxEl.addEventListener('change', (event) => {
+//     // if (event.currentTarget.checked) {
+//     //     buttonEl.removeAttribute('disabled');
+//     // } else {
+//     //     buttonEl.setAttribute('disabled', true);
+//     // }
+//     buttonEl.disabled = !event.currentTarget.checked;
+// })
 
-inputEl.addEventListener('blur', (event) => {
-console.log(event.currentTarget.value);
-})
+// inputEl.addEventListener('blur', (event) => {
+// console.log(event.currentTarget.value);
+// })
 
-soundEl.addEventListener('change', (event) => {
-console.log(event.currentTarget.value);
+// soundEl.addEventListener('change', (event) => {
+// console.log(event.currentTarget.value);
 
-})
+// })
+
+
+
+const formEl = document.querySelector(".js-register-form");
+formEl.addEventListener("submit", onSubmit)
+function onSubmit(event) {
+    event.preventDefault();
+    console.dir(event.currentTarget.elements.email.value);
+    event.currentTarget.reset();
+
+}
