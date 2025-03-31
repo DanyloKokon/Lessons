@@ -107,11 +107,41 @@
 
 
 
-const formEl = document.querySelector(".js-register-form");
-formEl.addEventListener("submit", onSubmit)
-function onSubmit(event) {
-    event.preventDefault();
-    console.dir(event.currentTarget.elements.email.value);
-    event.currentTarget.reset();
+// const formEl = document.querySelector(".js-register-form");
+// formEl.addEventListener("submit", onSubmit)
+// function onSubmit(event) {
+//     event.preventDefault();
+//     console.dir(event.currentTarget.elements.email.value);
+//     event.currentTarget.reset();
 
-}
+// }
+
+// const formEl = document.querySelector(".form");
+// formEl.addEventListener("submit", onSubmit)
+// function onSubmit(event) {
+//     event.preventDefault();
+//     alert(`Cntcs ${event.currentTarget.elements.name.value} number ${event.currentTarget.elements.tel.value}`);
+//     event.currentTarget.reset();
+
+// }
+
+
+
+
+
+
+
+
+const refs = {
+    output: document.querySelector('.js-output'),
+    clearBtn: document.querySelector('.js-clear'),
+  };
+  
+    window.addEventListener('keypress', onKeypress)
+
+ function onKeypress(event){
+    
+  console.log('event.code: ', event.code);
+  console.log('event.key: ', event.key);
+
+ }
