@@ -1,0 +1,21 @@
+{
+  "name": "terminal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nanoid": "^5.1.5",
+    "validator": "^13.15.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@pnotify/core": "^5.2.0"
+  }
+}
