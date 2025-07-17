@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "chart.js": "^4.4.9",
+    "vite-plugin-handlebars": "^2.0.0"
   }
 }

@@ -1,3 +1,3 @@
-const concutM = 'dania ' + 'kebab';
+// const concutM = 'dania ' + 'kebab';
 
-export default concutM
+// export default concutM
